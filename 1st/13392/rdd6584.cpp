@@ -1,44 +1,64 @@
-#include<stdio.h>
+// 재귀 DP
+#include <cstdio>
+#include <memory.h>
 
-int dp[10001][10];
-int vec[10001];
-int ob[10001];
+int dp[10000][10];
+int vec[10000];
+int ob[10000];
 
 int n;
-/* 이전 단계에서 맞춰진 수는 이후 단계에서 영향을 받지 않는다.
-위에서부터 차곡차곡 맞춰보자. 남은 단계를 하나의 작은 문제로 생각할 수 있다.
-여태까지 오른쪽으로 돌린 횟수를 p라고 했을 때, 이후에 나오는 모든 나사에 대해서도
-모두 동일하게 p번 만큼 돌아간 형태일 것이다. 그리고 p는 11이든 1이든 똑같다.
-위 성질들로 인해서 인자 x단계, p에 따라서 재귀함수는 항상 같은 최적값을
-반환한다는 것을 알 수 있다. */
+
 int go(int x, int p){
-    if(x >= n+1) return 0;
+	if(x >= n) return 0;
 	if(dp[x][p] != -1) return dp[x][p];
 
-	int c1, c2, temp = (vec[x] + p) % 10; // temp를 원래 숫자에서 p만큼 돌아간 숫자로 정의
+	int temp = (vec[x] + p) % 10;
+	int c1 = ob[x] - temp, c2 = temp - ob[x];
+	if(c1 < 0) c1 += 10; if(c2 < 0) c2 += 10;
 
-	if(temp < ob[x]){
-		c1 = ob[x] - temp + go(x+1, (p + ob[x] - temp) % 10);
-		c2 = 10 + temp - ob[x] + go(x+1, p);
-	}
-	else if(temp > ob[x]){
-		c1 = 10 + ob[x] - temp + go(x+1, (p + 10 + ob[x] - temp) % 10);
-		c2 = temp - ob[x] + go(x+1, p);
-	}
-	else return dp[x][p] = go(x+1, p);
+	c1 += go(x+1, (c1 + p) % 10);
+	c2 += go(x+1, p);
 	
-	if(c1 < c2)	return dp[x][p] =  c1;	// 왼쪽으로 돌린 것과 오른쪽으로 돌리는 것 중 더 작은 값을 반환.
-	else return dp[x][p] = c2;
+	return dp[x][p] =  c1 < c2 ? c1 : c2;
 }
 
 int main(){
 	scanf("%d", &n);
-	for(int i = 1; i <= n; i++) scanf("%1d", &vec[i]);
-	for(int i = 1; i <= n; i++) scanf("%1d", &ob[i]);
+	for(int i = 0; i < n; i++) scanf("%1d", &vec[i]);
+	for(int i = 0; i < n; i++) scanf("%1d", &ob[i]);
 	
-	for(int i = 1; i <= n; i++)
-		for(int j = 0; j <= 9; j++)
-			dp[i][j] = -1;
+	memset(dp, -1, sizeof(dp));
 
-	printf("%d", go(1, 0));
+	printf("%d", go(0, 0));
+
+}
+
+
+// 반복 DP
+#include <cstdio>
+#include <memory.h>
+#define MIN(a, b) (a) < (b) ? (a) : (b)
+
+int dp[10001][10] = {0};
+int vec[10000];
+int ob[10000];
+
+int main() {
+	int n, t1, t2, t3;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) scanf("%1d", &vec[i]);
+	for (int i = 0; i < n; i++) scanf("%1d", &ob[i]);
+
+	for (int i = n - 1; i >= 0; i--)
+		for (int j = 0; j < 10; j++) {
+			t1 = (vec[i] + j) % 10;
+			t2 = t1 - ob[i];
+			t3 = ob[i] - t1;
+			if (t2 < 0) t2 += 10;
+			if (t3 < 0) t3 += 10;
+
+			dp[i][j] = MIN(dp[i + 1][j] + t2, dp[i + 1][(j + t3) % 10] + t3);
+		}
+
+	printf("%d", dp[0][0]);
 }

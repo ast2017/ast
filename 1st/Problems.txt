@@ -5,4 +5,4 @@ https://www.acmicpc.net/problem/2146 다리 만들기(★2)
 DP문제
 https://www.acmicpc.net/problem/13305 주유소 (★1)
 https://www.acmicpc.net/problem/13392 방법을 출력하지 않는 숫자 맞추기 (★1.5)
-https://www.acmicpc.net/problem/2419 사수아탕 (★2)
+https://www.acmicpc.net/problem/2419 사수아탕 (★3)

@@ -20,7 +20,7 @@ int main(){
 			for(int j = 0; j < n - 1; j++)
 				if(temp[j] < temp[j + 1]) swap(temp[j], temp[j + 1], t);
 				
-		while(s && tt < n){	// 남은 s로 갈 수 있으면 스왑.
+		while(s && tt < n){
 			for(int i = 0; i < n && tt != -1 && temp[tt]; i++)
 				if(temp[tt] == vec[i]){
 					if(i-kk <= s) {

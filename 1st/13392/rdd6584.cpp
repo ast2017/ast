@@ -1,4 +1,4 @@
-// Àç±Í DP
+// ìž¬ê·€ DP
 #include <cstdio>
 #include <memory.h>
 
@@ -34,7 +34,7 @@ int main(){
 }
 
 
-// ¹Ýº¹ DP
+// ë°˜ë³µ DP
 #include <cstdio>
 #include <memory.h>
 #define MIN(a, b) (a) < (b) ? (a) : (b)

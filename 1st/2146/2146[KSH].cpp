@@ -2,29 +2,29 @@
 #include <cstdio>
 #include <queue>
 
-int map[100][100];
-int dst[100][100];
+int m[100][100];
+int d[100][100];
 int cmp[100][100];
 int dx[] = {1, -1, 0, 0};
 int dy[] = {0, 0, 1, -1};
 struct vertex { int a, b; };
-bool safe(int x, int y, int m_size) { return (x >= 0 && y >= 0) && (x < m_size && y < m_size); }
 
-void make_map(int a, int b, int cnt, int m_size) {
-	std::queue <vertex> q;
+bool safe(int a, int b, int n) {
+	return (a >= 0 && b >= 0) && (a < n && b < n);
+}
+
+void f(int a, int b, int cnt, int n) {
+	std::queue<vertex> q;
+	d[a][b] = cnt;
 	vertex temp; temp.a = a; temp.b = b;
 	q.push(temp);
-
 	while(!q.empty()) {
-		vertex cur = q.front();
-		dst[cur.a][cur.b] = cnt;
-		q.pop();
-
+		vertex cur = q.front(); q.pop();
 		for(int i = 0; i < 4; i++) {
 			int x = cur.a + dx[i];
 			int y = cur.b + dy[i];
-			if(safe(x, y, m_size) && map[x][y] == 1 && dst[x][y] == 0) {
-				dst[x][y] = cnt;
+			if(safe(x, y, n) && m[x][y] == 1 && d[x][y] == 0) {
+				d[x][y] = cnt;
 				temp.a = x; temp.b = y;
 				q.push(temp);
 			}
@@ -32,15 +32,39 @@ void make_map(int a, int b, int cnt, int m_size) {
 	}
 }
 
-int solve(int cnt, int m_size) {
-	int ans = -1;
-	std::queue <vertex> q;
+int search(int n) {
+	int cnt = 0;
+	for(int i = 0; i < n; i++) {
+		for(int j = 0; j < n; j++) {
+			if(m[i][j] == 1 && d[i][j] == 0) {
+				cnt++;
+				f(i, j, cnt, n);
+			}
+		}
+	}
+	return cnt;
+}
+
+int input() {
+	int n;
+	scanf("%d", &n);
+	for(int i = 0; i < n; i++) {
+		for(int j = 0; j < n; j++) {
+			scanf("%d", &m[i][j]);
+		}
+	}
+	return n;
+}
+
+int bf(int cnt, int n) {
+	std::queue<vertex> q;
 	vertex temp;
-	for(int c = 1; c <= cnt; c++) {
-		for(int i = 0; i < m_size; i++) {
-			for(int j = 0; j < m_size; j++) {
+	int ans = -1;
+	for(int k = 1; k <= cnt; k++) {
+		for(int i = 0; i < n; i++) {
+			for(int j = 0; j < n; j++) {
 				cmp[i][j] = -1;
-				if(dst[i][j] == c) {
+				if(d[i][j] == k) {
 					temp.a = i; temp.b = j;
 					q.push(temp);
 					cmp[i][j] = 0;
@@ -53,18 +77,21 @@ int solve(int cnt, int m_size) {
 			for(int i = 0; i < 4; i++) {
 				int x = cur.a + dx[i];
 				int y = cur.b + dy[i];
-				if(safe(x, y, m_size) && cmp[x][y] == -1) {
+				if(safe(x, y, n) && cmp[x][y] == -1) {
 					cmp[x][y] = cmp[cur.a][cur.b] + 1;
 					temp.a = x; temp.b = y;
 					q.push(temp);
 				}
 			}
 		}
-		for(int i = 0; i < m_size; i++) {
-			for(int j = 0; j < m_size; j++) {
-				if(map[i][j] == 1 && dst[i][j] != c)
-					if(ans == -1 || cmp[i][j] - 1 < ans)
+
+		for(int i = 0; i < n; i++) {
+			for(int j = 0; j < n; j++) {
+				if(m[i][j] == 1 && d[i][j] != k) {
+					if(ans == -1 || cmp[i][j] - 1 < ans) {
 						ans = cmp[i][j] - 1;
+					}
+				}
 			}
 		}
 	}
@@ -72,31 +99,10 @@ int solve(int cnt, int m_size) {
 	return ans;
 }
 
-int input() {
-	int n;
-	scanf("%d", &n);
-	for(int i = 0; i < n; i++)
-		for(int j = 0; j < n; j++)
-			scanf("%d", &map[i][j]);
-	return n;
-}
-
-
 
 int main() {
 	int n = input();
-	int cnt = 0;
-	
-	for(int i = 0; i < n; i++) {
-		for(int j = 0; j < n; j++) {
-			if(dst[i][j] == 0 && map[i][j] == 1) {
-				++cnt;
-				make_map(i, j, cnt, n);
-			}
-		}
-	}
-
-	int ans = solve(cnt, n);
-	printf("%d\n", ans);
+	int cnt = search(n);
+	printf("%d\n", bf(cnt, n));
 	return 0;
 }

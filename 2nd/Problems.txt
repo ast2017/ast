@@ -1,0 +1,10 @@
+DP문제2
+https://www.acmicpc.net/problem/1309 동물원 ★1
+https://www.acmicpc.net/problem/1563 개근상 ★1.5
+https://www.acmicpc.net/problem/10835 카드게임 ★2
+
+
+도전문제
+https://www.acmicpc.net/problem/11047 동전0 ★1
+https://www.acmicpc.net/problem/2336 굉장한 학생 ★2.5
+https://www.acmicpc.net/problem/10217 KCM Travel ★2.5

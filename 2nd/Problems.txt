@@ -1,7 +1,7 @@
 DP문제2
-https://www.acmicpc.net/problem/1309 동물원 ★1
+https://www.acmicpc.net/problem/1309 동물원 ★1.5
 https://www.acmicpc.net/problem/1563 개근상 ★1.5
-https://www.acmicpc.net/problem/10835 카드게임 ★2
+https://www.acmicpc.net/problem/10835 카드게임 ★1.5
 
 
 도전문제

@@ -9,9 +9,6 @@ int main() {
 	for(int i = 2; i <= n; i++) {
 		d[i] = (d[i - 1] * 2 + d[i - 2]) % 9901;
 	}
-
-	for(int i = 0; i <= n; i++) {
-		printf("d[%d]: %d\n", i, d[i]);
-	}
+	printf("%d\n", d[n]);
 	return 0;
 }

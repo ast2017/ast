@@ -1,5 +1,5 @@
 https://www.acmicpc.net/problem/15351 인생점수 ★1
-https://www.acmicpc.net/problem/5582 공통 부분 문자열 ★?
+https://www.acmicpc.net/problem/5582 공통 부분 문자열 ★1.5
 https://www.acmicpc.net/problem/5052 전화번호 목록 ★1.5
 https://www.acmicpc.net/problem/2573 빙산 ★2
 https://www.acmicpc.net/problem/2494 숫자 맞추기 ★2

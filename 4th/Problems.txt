@@ -1,3 +1,4 @@
 https://www.acmicpc.net/problem/1074 Z ★1
 https://www.acmicpc.net/problem/1931 회의실 배정★1.5
-https://www.acmicpc.net/problem/11058 크리보드 ★?https://www.acmicpc.net/problem/1514 자물쇠 ★2
+https://www.acmicpc.net/problem/11058 크리보드 ★1.5
+https://www.acmicpc.net/problem/1514 자물쇠 ★2.5

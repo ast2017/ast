@@ -3,9 +3,3 @@ https://www.acmicpc.net/problem/1074 Z ¡Ú1
 https://www.acmicpc.net/problem/1931 È¸ÀÇ½Ç ¹èÁ¤¡Ú1.5
 https://www.acmicpc.net/problem/11058 Å©¸®º¸µå ¡Ú1.5
 https://www.acmicpc.net/problem/1514 ÀÚ¹°¼è ¡Ú2.5
-=======
-https://www.acmicpc.net/problem/1074 Z â˜…1.5
-https://www.acmicpc.net/problem/1931 íšŒì˜ì‹¤ ë°°ì •â˜…1.5
-https://www.acmicpc.net/problem/11058 í¬ë¦¬ë³´ë“œ â˜…1.5
-https://www.acmicpc.net/problem/1514 ìžë¬¼ì‡  â˜…2.5
->>>>>>> f8d37130aefe825adcbcc0e413950fc59617406a

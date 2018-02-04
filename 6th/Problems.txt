@@ -1,5 +1,5 @@
-https://www.acmicpc.net/problem/4574 스도미노쿠
-https://www.acmicpc.net/problem/14627 파닭파닭
-https://www.acmicpc.net/problem/1102 발전소
-https://www.acmicpc.net/problem/1300 K번째 수
-https://www.acmicpc.net/problem/15270 친구 팰린드롬
+https://www.acmicpc.net/problem/4574 스도미노쿠 ★2
+https://www.acmicpc.net/problem/14627 파닭파닭★1.5
+https://www.acmicpc.net/problem/1102 발전소 ★2
+https://www.acmicpc.net/problem/1300 K번째 수 ★2
+https://www.acmicpc.net/problem/15270 친구 팰린드롬 ★2

@@ -8,6 +8,8 @@ typedef pair<int, int> pii;
 queue<pii> q;
 pii dp[200001];
 
+// dp[i].fi는 해당 인덱스를 최단경로로 갈 수 있는 경우의 수.
+// dp[i].se는 해당 인덱스가 cost가 몇이여야 최단경로인지.
 int main(){
 	int n, k;
 	pii v, tv;

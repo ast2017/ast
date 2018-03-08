@@ -12,6 +12,8 @@ struct node{
 };
 
 queue<node> q;
+// q가 비거나, 목표에 도달할 때까지 BFS 반복.
+// 숨바꼭질 문제와 같이 이런 뒤로가는 연산이 있는 경우, DP나 DFS로는 풀이가 힘든 것 같다.
 
 int main(){
 	int n, k;

@@ -12,6 +12,9 @@ queue<pii> q;
 int dp[200001];
 vector<int> vec;
 
+// 경로 역추적을 위해서, 가장 쉽게 할 수 있는 것 Where is from
+// 해당 인덱스가 어디서 왔는지 저장하는 배열 dp(이름만 dp)를 설정.
+
 int main(){
 	int n, k;
 	pii v, tv;

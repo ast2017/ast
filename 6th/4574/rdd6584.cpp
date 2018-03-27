@@ -1,3 +1,4 @@
+// 그냥 음.. 빈 공간을 모두 저장하고 앞에서부터 순서대로 백트래킹
 #include <cstdio>
 #include <memory.h>
 #include <vector>

@@ -1,4 +1,10 @@
-// version 1
+/* version 1
+DP[순서][두 탑간 차이] = 왼쪽탑의 높이로 정의.
+오른쪽 탑이 더 높아서 음수로 변하는 경우는
+일괄적으로 25만을 더해서 음수를 없애는 방법으로 해결가능.
+그리고 오른쪽이 더 높은경우, 왼쪽탑과 오른쪽탑의 구성 요소를
+서로 교환하는 것으로도 해결가능하다.
+*/
 #include <cstdio>
 #include <memory.h>
 using namespace std;
@@ -37,7 +43,7 @@ int main() {
 	else printf("%d", t);
 }
 
-// version 2
+// Cubelover님 버전 반복문.
 #include <cstdio>
 #include <memory.h>
 using namespace std;

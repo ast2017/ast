@@ -1,5 +1,5 @@
-https://www.acmicpc.net/problem/1965 상자넣기 ★1.5
-https://www.acmicpc.net/problem/2841 외계인의 기타 연주 ★2
+https://www.acmicpc.net/problem/1965 상자넣기 ★1
+https://www.acmicpc.net/problem/2841 외계인의 기타 연주 ★1
 https://www.acmicpc.net/problem/3090 차이를 최소로 ★2
 https://www.acmicpc.net/problem/6549 히스토그램에서 가장 큰 직사각형 ★2
 https://www.acmicpc.net/problem/1166 선물 ★2

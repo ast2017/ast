@@ -1,3 +1,9 @@
+/*
+세그먼트 트리를 이용한 LIS풀이
+가장 많은 전깃줄을 남겨야하므로, 이는 즉 LIS의 길이이다.
+따라서 정답은 N-LIS길이이며,
+최댓값 세그로 현재 원소의 LIS길이를 저장하여 풀 수 있음
+*/
 #include <cstdio>
 #include <algorithm>
 using namespace std;

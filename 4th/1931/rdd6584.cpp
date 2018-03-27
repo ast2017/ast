@@ -1,3 +1,4 @@
+// 그리디. 끝나는 시간 순으로 정렬하고 순서대로 들어가는 것이 최적.
 #include <cstdio>
 #include <algorithm>
 

@@ -1,3 +1,4 @@
+// DP라지만 좀더 그리디함.
 #include <cstdio>
 
 int dis[100000];

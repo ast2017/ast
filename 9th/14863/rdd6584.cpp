@@ -1,4 +1,5 @@
 // version1
+// DP[순서][시간합] = 모금액합으로 구성하여 해결.
 #include <cstdio>
 
 int vec[100][4];
@@ -23,6 +24,7 @@ int main(){
 }
 
 // version2
+// 반복문풀이로 메모리 줄인 버젼. 서브셋섬 풀이와 유사.
 #include <cstdio>
 #include <queue>
 #define MAX(a, b) (a) > (b) ? (a) : (b)

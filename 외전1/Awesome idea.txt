@@ -1,0 +1,10 @@
+https://www.acmicpc.net/problem/2830 행성 X3 ★2
+https://www.acmicpc.net/problem/1242 소풍 ★2.5
+https://www.acmicpc.net/problem/14411 합집합 ★1.5
+https://www.acmicpc.net/problem/14466 소가 길을 건너간 이유6 ★2
+https://www.acmicpc.net/problem/1153 네 개의 소수 ★2
+https://www.acmicpc.net/problem/10986 나머지 합 ★2
+https://www.acmicpc.net/problem/2220 힙 정렬 ★2
+https://code.google.com/codejam/contest/3264486/dashboard#s=p2 Bathroom Stalls ★2
+http://codeforces.com/problemset/problem/898/D Alarm Clock ★2
+http://codeforces.com/problemset/problem/893/D Credit Card ★2

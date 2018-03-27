@@ -1,3 +1,5 @@
+// 가장자리를 모두 큐에 집어넣어서 모든 섬으로 부터 하나씩 BFS해봄.
+// 확장판 문명문제.
 #include <cstdio>
 #include <memory.h>
 #include <queue>

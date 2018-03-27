@@ -1,5 +1,5 @@
-https://www.acmicpc.net/problem/2042 구간 합 구하기
-https://www.acmicpc.net/problem/2357 최소값과 최대값
-https://www.acmicpc.net/problem/1126 같은 탑
-https://www.acmicpc.net/problem/1365 꼬인 전깃줄
-https://www.acmicpc.net/problem/14863 서울에서 경산까지
+https://www.acmicpc.net/problem/2042 구간 합 구하기 ★1.5
+https://www.acmicpc.net/problem/2357 최소값과 최대값 ★1.5
+https://www.acmicpc.net/problem/1126 같은 탑 ★2.5
+https://www.acmicpc.net/problem/1365 꼬인 전깃줄 ★2
+https://www.acmicpc.net/problem/14863 서울에서 경산까지 ★1.5

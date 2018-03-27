@@ -1,3 +1,4 @@
+// 최소 최대를 한 노드에 담아서 처리함. 세그.
 #include <cstdio>
 #include <algorithm>
 using namespace std;

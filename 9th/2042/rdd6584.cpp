@@ -1,3 +1,4 @@
+// 구간합 세그 구현.
 #include<stdio.h>
 
 long long tree[1000001] = {0};

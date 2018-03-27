@@ -1,3 +1,4 @@
+// 단순 구현문제
 #include <cstdio>
 #include <cstring>
 

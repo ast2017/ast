@@ -1,4 +1,4 @@
-https://boj.kr/13460	째로탈출2 
-https://boj.kr/2580	스도쿠
-https://boj.kr/14620	꽃길
-https://boj.kr/2098	외판원 순회
+https://boj.kr/13460 째로탈출2 ★2
+https://boj.kr/2580 스도쿠 ★1.5
+https://boj.kr/14620 꽃길 ★1.5
+https://boj.kr/2098 외판원 순회 ★2

@@ -1,3 +1,5 @@
+// 방문상태를 bitset을 이용하여 저장.
+// 방문상태에 따른 값 메모이제이션.
 #include <cstdio>
 
 struct data {

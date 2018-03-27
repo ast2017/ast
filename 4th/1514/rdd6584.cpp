@@ -1,3 +1,8 @@
+/* 재귀DP를 이용한 풀이
+숫자맞추기와 동일하게 위부터 맞춰나가는 것이 항상 최적
+그러면 DP[순서][현재 돌아간 양][다음 돌아간 양] = 최솟값을 저장하여 해결.
+
+*/
 #include <cstdio>
 #include <memory.h>
 
@@ -18,6 +23,7 @@ int go(int o, int now, int next) {
 	if(t1 < 0) t1 += 10;
 	else t2 -= 10;
 	
+	// i + j + k <= t1인 모든 i,j,k쌍에 대해서 탐색.
 	for(int i = 0; i <= t1; i++)
 		for(int j = 0; i + j <= t1; j++){
 				k = t1 - (i + j);

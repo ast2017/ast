@@ -1,3 +1,8 @@
+/*
+이전에 나왔던 최댓값중, 다시 최댓값을 계산한다.
+DP수식은, j단계에서 i단계로 갈 때 드래그 + 복사하고
+나머지를 전부 붙여넣기 한 것을 표현함.
+*/
 #include <cstdio>
 #include <memory.h>
 #define MAX(a, b) (a) > (b) ? (a) : (b)

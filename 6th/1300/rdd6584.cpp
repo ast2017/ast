@@ -1,3 +1,7 @@
+/*
+이분탐색을 이용한 풀이
+x보다 작은 값의 갯수 f(x) = x/ R(1~N) 들의 합
+*/
 #include<stdio.h>
 
 int main() {

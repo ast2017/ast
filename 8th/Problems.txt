@@ -1,4 +1,4 @@
-https://www.acmicpc.net/problem/12851 숨바꼭질 2
-https://www.acmicpc.net/problem/13913 숨바꼭질 4
-https://www.acmicpc.net/problem/15558 점프 게임
-https://www.acmicpc.net/problem/2879 코딩은 예쁘게
+https://www.acmicpc.net/problem/12851 숨바꼭질 2 ★1.5
+https://www.acmicpc.net/problem/13913 숨바꼭질 4 ★1.5
+https://www.acmicpc.net/problem/15558 점프 게임 ★1.5
+https://www.acmicpc.net/problem/2879 코딩은 예쁘게 ★1.5

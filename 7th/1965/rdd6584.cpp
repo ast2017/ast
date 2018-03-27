@@ -4,7 +4,7 @@
 int vec[1000];
 int dp[1000];
 // dp[i]는 vec[i] ~ vec[n - 1]까지 계산 했을 때 최댓값.
-
+// 이 문제는 LIS와 같음.
 int main() {
 	int n, max = 1;
 	scanf("%d", &n);

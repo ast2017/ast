@@ -1,0 +1,5 @@
+https://www.acmicpc.net/problem/2352 반도체 설계
+https://www.acmicpc.net/problem/10422 괄호
+https://www.acmicpc.net/problem/1321 군인
+https://www.acmicpc.net/problem/2465 줄 세우기
+https://www.acmicpc.net/problem/2820 자동차 공장

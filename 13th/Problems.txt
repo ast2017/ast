@@ -1,0 +1,24 @@
+boj.kr/1014 컨닝
+boj.kr/2515 전시장
+boj.kr/5721 사탕 줍기 대회
+boj.kr/1720 타일코드
+boj.kr/2662 기업투자
+
+boj.kr/1562 계단 수
+boj.kr/3943 헤일스톤 수열
+boj.kr/1660 캡틴 이다솜
+boj.kr/2688 줄어들지 않아
+boj.kr/1256 사전
+
+
+https://www.acmicpc.net/problem/2482 색상환
+https://www.acmicpc.net/problem/1315 RPG
+https://www.acmicpc.net/problem/14718 용감한 용사 진수
+https://www.acmicpc.net/problem/1006 습격자 초라기
+https://www.acmicpc.net/problem/2419 사수아탕
+
+http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2389&sca=50&page=21 CD홀더
+http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2390&sca=50&page=21 마법의 성
+http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2391&sca=50&page=21 숫자야구2
+http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2392&sca=50&page=21 주문형 농산물재배
+http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=2399&sca=50&page=21 계산기
